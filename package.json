@@ -1,0 +1,28 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iosifache",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "browser-sync": "^2.18.13",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.15.4",
+    "gulp": "^3.9.1",
+    "helmet": "^3.8.1",
+    "method-override": "^2.3.9",
+    "mongodb": "^2.2.30",
+    "passport": "^0.3.2",
+    "pug": "^2.0.0-rc.2",
+    "request": "^2.81.0",
+    "socket.io": "^2.0.3"
+  }
+}
