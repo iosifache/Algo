@@ -1,8 +1,24 @@
 html
 	head
+		title= titleIndex
 		link(rel='stylesheet', href='/css/index.css')
-	body
-		h1= brand
+	body#index
+		div.vertical
+			h1= brand
+			div
+				p= description
+				br
+				a(href="/search")
+					button= button1
+				br
+				a(href="/algorithm")
+					button= button2
+				br
+				a(href="/compilator")
+					button= button3
+				br
+				a(href="/admin")
+					button= button4
 		script(src='lib/vue.min.js')
 		script(src='lib/vue-resource.min.js')
 		script(src='lib/socket.io.min.js')

@@ -1,0 +1,90 @@
+html
+	head
+		title= titleCompiler
+		link(rel='stylesheet', href='/css/index.css')
+		link(rel='stylesheet', href='/lib/font-awesome.min.css')
+	body#compiler
+		div#menu
+			a(href="/")
+				h1= brand
+			div
+				a(href="/search")= button1
+				a(href="/algorithm")= button2
+				a(href="/compilator")= button3
+				a(href="/admin")= button4
+		div(id="blocklyDiv", style="width: 50%; height: calc(100% - 50px); display: inline-block; float: left;")
+		<xml id="toolbox" style="display: none">
+				<block type="logic_boolean"></block>
+				<block type="math_number"></block>
+				<block type="logic_compare"></block>
+				<block type="logic_operation"></block>
+				<block type="math_arithmetic">
+					<value name="A">
+						<shadow type="math_number">
+							<field name="NUM">1</field>
+						</shadow>
+					</value>
+					<value name="B">
+						<shadow type="math_number">
+							<field name="NUM">1</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="variables_set"></block>
+				<block type="text_print">
+					<value name="TEXT">
+						<shadow type="text">
+							<field name="TEXT">abc</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="controls_if"></block>
+				<block type="controls_repeat_ext">
+					<value name="TIMES">
+						<shadow type="math_number">
+							<field name="NUM">10</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="controls_whileUntil" />
+				<block type="controls_for">
+					<value name="FROM">
+						<shadow type="math_number">
+							<field name="NUM">1</field>
+						</shadow>
+					</value>
+					<value name="TO">
+						<shadow type="math_number">
+							<field name="NUM">10</field>
+						</shadow>
+					</value>
+					<value name="BY">
+						<shadow type="math_number">
+							<field name="NUM">1</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="controls_forEach"></block>
+				<block type="controls_flow_statements"></block>
+				<block type="controls_repeat_ext"></block>
+				<block type="logic_compare"></block>
+				<block type="math_number"></block>
+				<block type="math_arithmetic"></block>
+				<block type="text"></block>
+				<block type="text_print"></block>
+		</xml>
+		div#editor
+		div#commands
+			i.fa.fa-eye#show
+			i.fa.fa-play#play
+			i.fa.fa-step-forward#step
+		script(src='lib/vue.min.js')
+		script(src='lib/vue-resource.min.js')
+		script(src='lib/socket.io.min.js')
+		script(src='https://blockly-demo.appspot.com/static/demos/interpreter/acorn_interpreter.js')
+		script(src='https://blockly-demo.appspot.com/static/blockly_compressed.js')
+		script(src='https://blockly-demo.appspot.com/static/javascript_compressed.js')
+		script(src='https://blockly-demo.appspot.com/static/blocks_compressed.js')
+		script(src='js/ro.js')
+		script(src='lib/src/ace.js')
+		script(src='js/compiler.js')

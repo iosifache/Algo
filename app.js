@@ -40,9 +40,15 @@ app.set('view engine', 'pug');
 
 /* Models */
 global.modelIndex = require('./server/models/index');
+global.modelSearch = require('./server/models/search');
+global.modelCompiler = require('./server/models/compiler');
+global.modelAdmin = require('./server/models/admin');
 
 /* Controllers */
 global.index = require('./server/controllers/index')(app);
+global.search = require('./server/controllers/search')(app);
+global.compiler = require('./server/controllers/compiler')(app);
+global.admin = require('./server/controllers/admin')(app);
 
 /* Listen */
 global.server = app.listen(config.port, function(){
@@ -58,5 +64,8 @@ io.on('connection', function(client){
 
     // Sockets
     global.socketIndex = require('./server/sockets/index')(client);
+    global.socketSearch = require('./server/sockets/search')(client);
+    global.socketCompiler = require('./server/sockets/compiler')(client);
+    global.socketAdmin = require('./server/sockets/admin')(client);
 
 });

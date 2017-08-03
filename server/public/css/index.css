@@ -1,8 +1,225 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 body{
-    background-color: #e67e22;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+#index{
+  background-color: #16a085;
+  color: #fff;
+}
+#index div.vertical{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+#index h1{
+  font-size: 64px;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 10px 0;
+  line-height: 64px;
+  font-family: 'Permanent Marker', cursive;
+}
+#index div{
+  text-align: center;
+}
+#index div p{
+  font-size: 18px;
+  width: 80%;
+  margin: 0 10%;
+  text-align: center;
+  font-weight: 300;
+}
+#index div button{
+  color: #16a085;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 36px;
+  width: 350px;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  transition: all 0.7s ease;
+}
+#index div button:hover{
+  color: #000;
+}
+div#menu{
+  height: 50px;
+  background-color: #16a085;
+  color: #fff;
+}
+div#menu h1{
+  font-size: 24px;
+  line-height: 50px;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+  float: left;
+  cursor: pointer;
+}
+div#menu div{
+  float: right;
+}
+div#menu div a{
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+  font-size: 14px;
+  margin: 0 15px;
+  line-height: 50px;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+div#menu div a:hover{
+  color: #000;
+}
+#search #list{
+  list-style-type: none;
+}
+#search #list #item{
+  background-color: #16a085;
+  width: 80%;
+  margin: 20px 10%;
+  height: 300px;
+}
+#search #list #item #half{
+  background-color: #16a085;
+  width: 50%;
+  float: left;
+  display: inline-block;
+  height: 300px;
+}
+#search #list #item #half:first-child{
+  background: #1abc9c;
+  height: 300px;
+}
+#search #list #item #half h1{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  background: #000;
+}
+#search #list #item #half p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  margin: 10px;
+  padding: 0;
+}
+#search #list #item #half pre{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  background: #ecf0f1;
+  margin: 0 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+#search #list #item #half img{
+  width: 200px;
+  margin-top: 50px;
+}
+#search #list #item #half:nth-child(2){
+  text-align: center;
+}
+#search::-webkit-scrollbar-track{
+  background-color: #ecf0f1;
+}
+#search::-webkit-scrollbar{
+  width: 6px;
+  background-color: white;
+}
+#search::-webkit-scrollbar-thumb{
+  background: #1f2123;
+}
+#compiler{
+  overflow: hidden;
+}
+#compiler #editor{
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: calc(100% - 100px);
+}
+#compiler #commands{
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  background-color: #16a085;
+}
+#compiler #commands{
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+}
+#compiler #commands i{
+  color: #fff;
+  width: 33.33%;
+  text-align: center;
+  transition: all 0.7s ease;
+  cursor: pointer;
+  line-height: 50px;
+}
+#compiler #commands i:hover{
+  color: #000;
+}
+.blocklyFlyoutScrollbar{
+  display: none;
+}
+#admin::-webkit-scrollbar-track{
+  background-color: #ecf0f1;
+}
+#admin::-webkit-scrollbar{
+  width: 6px;
+  background-color: white;
+}
+#admin::-webkit-scrollbar-thumb{
+  background: #1f2123;
+}
+#admin #infos{
+  width: 80%;
+  margin: 20px 10%;
+}
+#admin #infos p{
+  width: calc(100% - 10px);
+  margin: 0;
+  padding: 0;
+  background: #1abc9c;
+  padding: 5px;
+  color: #fff;
+}
+#admin #infos i{
+  margin: 0 0 0 10px;
+  transition: all 0.7s ease;
+}
+#admin #infos i:hover{
+  color: #000;
+  cursor: pointer;
+}
+#admin #infos input{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #16a085;
+  outline: 0;
+  border: none;
+  color: #fff;
 }

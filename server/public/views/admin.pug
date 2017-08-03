@@ -1,0 +1,49 @@
+html
+	head
+		title= titleAdmin
+		link(rel='stylesheet', href='/css/index.css')
+		link(rel='stylesheet', href='/lib/font-awesome.min.css')
+	body#admin
+		div#menu
+			a(href="/")
+				h1= brand
+			div
+				a(href="/search")= button1
+				a(href="/algorithm")= button2
+				a(href="/compilator")= button3
+				a(href="/admin")= button4
+		div#infos
+			p= "Data: Brand"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="brand", autocomplete="off", spellcheck="false")
+			p= "Data: Title Index"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="titleIndex", autocomplete="off", spellcheck="false")
+			p= "Data: Titlu search"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="titleSearch", autocomplete="off", spellcheck="false")
+			p= "Data: Titlu compiler"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="titleCompiler", autocomplete="off", spellcheck="false")
+			p= "Data: Titlu admin"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="titleAdmin", autocomplete="off", spellcheck="false")
+			p= "Data: Description"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="description", autocomplete="off", spellcheck="false")
+			p= "Data: Button #1"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="button1", autocomplete="off", spellcheck="false")
+			p= "Data: Button #2"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="button2", autocomplete="off", spellcheck="false")
+			p= "Data: Button #3"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="button3", autocomplete="off", spellcheck="false")
+			p= "Data: Button #4"
+				i.fa.fa-pencil(v-on:click="update")
+			input(type="text", v-model="button4", autocomplete="off", spellcheck="false")
+		script(src='lib/vue.min.js')
+		script(src='lib/vue-resource.min.js')
+		script(src='lib/socket.io.min.js')
+		script(src='js/admin.js')

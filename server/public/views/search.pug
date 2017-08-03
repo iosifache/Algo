@@ -1,0 +1,18 @@
+html
+	head
+		title= titleSearch
+		link(rel='stylesheet', href='/css/index.css')
+	body#search
+		div#menu
+			a(href="/")
+				h1= brand
+			div
+				a(href="/search")= button1
+				a(href="/algorithm")= button2
+				a(href="/compilator")= button3
+				a(href="/admin")= button4
+		ul#list
+		script(src='lib/vue.min.js')
+		script(src='lib/vue-resource.min.js')
+		script(src='lib/socket.io.min.js')
+		script(src='js/search.js')
