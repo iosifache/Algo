@@ -1,4 +1,4 @@
-# Nikola
+# Algo
 - categorie: Educational, etapa OPEN
 - realizator: Iosif George Andrei
 - homepage: http://localhost:3000
