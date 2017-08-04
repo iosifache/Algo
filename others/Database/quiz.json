@@ -1,0 +1,33 @@
+{
+    "id" : 1,
+    "text" : "Ce se intampla la executarea comenzii CITESTE?",
+    "raspunsuri" : [
+        "citeste variabila introdusa intre paranteze",
+        "printeaza textul introdus intre paranteze",
+        "atribuie o valoare unei variabile",
+        "decide daca aplici o actiune in functie de o conditie"
+    ],
+    "corect" : "1"
+},
+{
+    "id" : 2,
+    "text" : "Ce se intampla la executarea comenzii PRINTEAZA?",
+    "raspunsuri" : [
+        "citeste variabila introdusa intre paranteze",
+        "decide daca aplici o actiune in functie de o conditie",
+        "printeaza textul introdus intre paranteze",
+        "atribuie o valoare unei variabile"
+    ],
+    "corect" : "3"
+},
+{
+    "id" : 3,
+    "text" : "Ce se intampla la executarea comenzii REPETA PENTRU?",
+    "raspunsuri" : [
+        "citeste variabila introdusa intre paranteze",
+        "atribuie o valoare unei variabile",
+        "repeta instructiunile pentru mai multe valori",
+        "printeaza textul introdus intre paranteze"
+    ],
+    "corect" : 3
+}

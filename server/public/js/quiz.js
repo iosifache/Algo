@@ -16,6 +16,6 @@ socket.on('quizResult', function(data){
 document.getElementById("send").addEventListener("click", sendAnswer);
 function sendAnswer(){
   var selected = document.querySelector('input[name="answer"]:checked').value;
-  if (selected==answer) alert("Corect")
-  else alert("Incorect")
+  if (selected==answer) document.getElementById("result").innerHTML="Raspunsul tau este <b>CORECT</b>"
+  else document.getElementById("result").innerHTML="Raspunsul tau este <b>INCORECT</b>. Vezi pagina de COMENZI DE PSEUDOCOD";
 }

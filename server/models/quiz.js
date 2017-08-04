@@ -6,6 +6,7 @@ var indexPageModel = {
     "button1": 1,
     "button2": 1,
     "button3": 1,
-    "button4": 1
+    "button4": 1,
+    "sendText": 1
 };
 module.exports = indexPageModel;

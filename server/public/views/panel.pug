@@ -3,6 +3,7 @@ html
 		title= titleAdmin
 		link(rel='stylesheet', href='/css/index.css')
 		link(rel='stylesheet', href='/lib/font-awesome.min.css')
+		link(rel="shortcut icon", href="/img/favicon.ico")
 	body#admin
 		div#menu
 			a(href="/")
@@ -11,38 +12,50 @@ html
 				a(href="/search")= button1
 				a(href="/algorithm")= button2
 				a(href="/compilator")= button3
-				a(href="/admin")= button4
+				a(href="/quiz")= button4
 			div#infos
-				p= "Data: Brand"
+				p= "Brand"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="brand", autocomplete="off", spellcheck="false")
-				p= "Data: Title Index"
+				p= "Title Index"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="titleIndex", autocomplete="off", spellcheck="false")
-				p= "Data: Titlu search"
+				p= "Titlu search"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="titleSearch", autocomplete="off", spellcheck="false")
-				p= "Data: Titlu compiler"
+				p= "Titlu compiler"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="titleCompiler", autocomplete="off", spellcheck="false")
-				p= "Data: Titlu admin"
+				p= "Titlu admin"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="titleAdmin", autocomplete="off", spellcheck="false")
-				p= "Data: Description"
+				p= "Titlu quiz"
+					i.fa.fa-pencil(v-on:click="update")
+				input(type="text", v-model="titleQuiz", autocomplete="off", spellcheck="false")
+				p= "Titlu algoritmi"
+					i.fa.fa-pencil(v-on:click="update")
+				input(type="text", v-model="titleAlgorithm", autocomplete="off", spellcheck="false")
+				p= "Description"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="description", autocomplete="off", spellcheck="false")
-				p= "Data: Button #1"
+				p= "Button #1"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="button1", autocomplete="off", spellcheck="false")
-				p= "Data: Button #2"
+				p= "Button #2"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="button2", autocomplete="off", spellcheck="false")
-				p= "Data: Button #3"
+				p= "Button #3"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="button3", autocomplete="off", spellcheck="false")
-				p= "Data: Button #4"
+				p= "Button #4"
 					i.fa.fa-pencil(v-on:click="update")
 				input(type="text", v-model="button4", autocomplete="off", spellcheck="false")
+				p= "Send text"
+					i.fa.fa-pencil(v-on:click="update")
+				input(type="text", v-model="sendText", autocomplete="off", spellcheck="false")
+				p= "Login text"
+					i.fa.fa-pencil(v-on:click="update")
+				input(type="text", v-model="loginText", autocomplete="off", spellcheck="false")
 		script(src='lib/vue.min.js')
 		script(src='lib/vue-resource.min.js')
 		script(src='lib/socket.io.min.js')

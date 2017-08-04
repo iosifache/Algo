@@ -125,7 +125,7 @@ div#menu div a:hover{
   padding: 0;
 }
 #search #list #item #half pre{
-  font-size: 14px;
+  font-size: 12x;
   line-height: 18px;
   font-weight: 300;
   background: #ecf0f1;
@@ -258,16 +258,95 @@ div#menu div a:hover{
 #login button:hover{
   color: #000;
 }
+#algorithm #articles #article{
+  background-color: #16a085;
+  width: 80%;
+  margin: 0 10%;
+  float: left;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#algorithm #articles #article:first-child{
+  margin-top: 20px;
+}
+#algorithm #articles #article.small{
+  height: 300px;
+}
+#algorithm #articles #article.medium{
+  height: 330px;
+}
+#algorithm #articles #article h1{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  background: #000;
+}
+#algorithm #articles #article p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  margin: 10px;
+  padding: 0;
+}
+#algorithm #articles #article .screen{
+  display: inline-block;
+  float: right;
+  border: 2px solid #000;
+  margin: 20px;
+}
 #algorithm .canvas{
+  display: inline-block;
+  float: left;
   position: relative;
   width: 600px;
-  height: 400px;
+}
+#algorithm::-webkit-scrollbar-track{
+  background-color: #ecf0f1;
+}
+#algorithm::-webkit-scrollbar{
+  width: 6px;
+  background-color: white;
+}
+#algorithm::-webkit-scrollbar-thumb{
+  background: #1f2123;
 }
 #algorithm .canvas .box{
   width: 150px;
   display: inline-block;
   float: left;
   margin: 10px;
+}
+#algorithm .canvas .cube{
+  top: 30px;
+  width: 120px;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+}
+#algorithm .canvas .cubeMoved1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+  animation: mutareCub1 10s;
+  animation-fill-mode:forwards;
+}
+#algorithm .canvas .cubeMoved2{
+  position: absolute;
+  top: 0;
+  left: 154px;
+  width: 120px;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+  animation: mutareCub2 10s;
+  animation-fill-mode:forwards;
 }
 #algorithm .canvas .item{
   position: absolute;
@@ -287,6 +366,33 @@ div#menu div a:hover{
   animation-fill-mode:forwards;
   top: 30px;
   left: 220px;
+}
+#algorithm .canvas b{
+    line-height: 150px;
+    float: left;
+    font-size: 24px;
+}
+@keyframes mutareCub1{
+    0%   {
+      left: 0;
+    }
+    50%  {
+      left: 300px;
+    }
+    100% {
+      left: 300px
+    }
+}
+@keyframes mutareCub2{
+    0%   {
+      left: 154px;
+    }
+    50%  {
+      left: 154px;
+    }
+    100% {
+      left: 410px;
+    }
 }
 @keyframes interschimbareApples{
     0%   {
@@ -323,4 +429,56 @@ div#menu div a:hover{
       top: 30px;
       left: 40px;
     }
+}
+#quiz #question{
+  background-color: #16a085;
+  width: 80%;
+  margin: 0 10%;
+  height: 200px;
+  margin-top: 20px;
+}
+#quiz #question h1{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  background: #000;
+}
+#quiz #question label{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  padding: 0;
+}
+#quiz input[type="radio"]{
+  margin: 5px 10px;
+}
+#quiz button{
+  color: #16a085;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 36px;
+  width: 350px;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  margin: 10px 5px;
+  transition: all 0.7s ease;
+}
+#quiz button:hover{
+  color: #000;
+}
+#quiz #resultDiv{
+  background-color: #16a085;
+  width: 80%;
+  height: 56px;
+  margin: 20px 10%;
+  padding: 1px 5px;
+  font-size: 16px;
+  color: #fff;
 }

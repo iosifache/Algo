@@ -1,8 +1,9 @@
 html
 	head
-		title= titleSearch
+		title= titleQuiz
 		link(rel='stylesheet', href='/css/index.css')
-	body#search
+		link(rel="shortcut icon", href="/img/favicon.ico")
+	body#quiz
 		div#menu
 			a(href="/")
 				h1= brand
@@ -10,9 +11,9 @@ html
 				a(href="/search")= button1
 				a(href="/algorithm")= button2
 				a(href="/compilator")= button3
-				a(href="/admin")= button4
+				a(href="/quiz")= button4
 		div#question
-				p#text
+				h1#text
 				input(value="1", type="radio", name="answer")
 				label#one
 				br
@@ -25,7 +26,9 @@ html
 				input(value="4", type="radio", name="answer")
 				label#four
 				br
-				button#send= "Trimite"
+				button#send= sendText
+		div#resultDiv
+				p#result
 		script(src='lib/vue.min.js')
 		script(src='lib/vue-resource.min.js')
 		script(src='lib/socket.io.min.js')

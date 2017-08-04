@@ -1,0 +1,42 @@
+{
+    "title" : "Citeste",
+    "info" : "INFO: citeste variabila introdusa intre paranteze",
+    "syntax" : "Citeste &lt;constante alfabetice sau liste de variabile&gt;",
+    "image" : "1.png"
+},
+{
+    "title" : "Scrie",
+    "info" : "INFO: printeaza textul introdus intre paranteze",
+    "syntax" : "Citeste &lt;liste de variabile&gt;",
+    "image" : "2.png"
+},
+{
+    "title" : "Atribuie",
+    "info" : "INFO: Atribuie o valoare unei variabile",
+    "syntax" : "v:=&lt;expresie&gt;",
+    "image" : "3.png"
+},
+{
+    "title" : "Decide",
+    "info" : "INFO: Decide daca aplici o actiune in functie de o conditie",
+    "syntax" : "daca &lt;conditie&gt; atunci instructiune1 altfel instructiune2",
+    "image" : "4.png"
+},
+{
+    "title" : "Repeta cat timp",
+    "info" : "INFO: repeta instructiunile cat timp este indeplinita o conditie",
+    "syntax" : "cat timp &lt;conditie&gt; executa instructiune",
+    "image" : "6.jpg"
+},
+{
+    "title" : "Repeta pentru",
+    "info" : "INFO: repeta instructiunile pentru mai multe valori",
+    "syntax" : "pentru i:=val_min pana la val_max executa instructiune",
+    "image" : "5.png"
+},
+{
+    "title" : "Repeta pana cand",
+    "info" : "INFO: repeta instructiunile pana cand conditia este falsa",
+    "syntax" : "repeta instructiunile pana cand &lt;conditie&gt;",
+    "image" : "6.jpg"
+}

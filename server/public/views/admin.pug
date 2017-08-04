@@ -3,6 +3,7 @@ html
 		title= titleAdmin
 		link(rel='stylesheet', href='/css/index.css')
 		link(rel='stylesheet', href='/lib/font-awesome.min.css')
+		link(rel="shortcut icon", href="/img/favicon.ico")
 	body#admin
 		div#menu
 			a(href="/")
@@ -11,11 +12,11 @@ html
 				a(href="/search")= button1
 				a(href="/algorithm")= button2
 				a(href="/compilator")= button3
-				a(href="/admin")= button4
+				a(href="/quiz")= button4
 		div#login
 			input(type="text", v-model="user", autocomplete="off", spellcheck="false")
 			input(type="password", v-model="password", autocomplete="off", spellcheck="false")
-			button(v-on:click="login")= "Login"
+			button(v-on:click="login")= loginText
 		script(src='lib/vue.min.js')
 		script(src='lib/vue-resource.min.js')
 		script(src='lib/socket.io.min.js')

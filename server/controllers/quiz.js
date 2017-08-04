@@ -11,6 +11,7 @@ module.exports = function(app){
                     button2: results[0].button2,
                     button3: results[0].button3,
                     button4: results[0].button4,
+                    sendText: results[0].sendText
                 });
             };
         });

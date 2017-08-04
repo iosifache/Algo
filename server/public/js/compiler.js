@@ -4,7 +4,9 @@ function showCode(){
   var code = Blockly.JavaScript.workspaceToCode(workspace);
   code = code.replace(/^.*highlightBlock.*$/mg, "");
   code = code.replace(/\n{2,}/g,"\n");
-  code = code.slice(1, code.length)
+  if (code.substring(0, 1) == "\n") {
+    code = code.slice(1, code.length);
+  }
   editor.setValue(code, 1);
 }
 function runCode(){

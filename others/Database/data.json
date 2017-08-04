@@ -1,0 +1,16 @@
+{
+    "brand" : "Algo",
+    "titleIndex" : "Algo: Acasa",
+    "titleSearch" : "Algo: Comenzi pseudocod",
+    "titleCompiler" : "Algo: Compiler",
+    "titleAdmin" : "Algo: Admin",
+    "titleAlgorithm" : "Algo: Algoritmi explicati",
+    "titleQuiz" : "Algo: Quiz",
+    "description" : "Algo este un website de tip educational, venit in sprijinul elevilor de gimnaziu pentru a-i introduce in tainele informaticii.",
+    "button1" : "Comenzi de pseudocod",
+    "button2" : "Algoritmi explicati",
+    "button3" : "Executare programe",
+    "button4" : "Testari",
+    "loginText" : "Login",
+    "sendText" : "Verifica solutia"
+}
