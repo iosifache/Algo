@@ -1,0 +1,32 @@
+html
+	head
+		title= titleSearch
+		link(rel='stylesheet', href='/css/index.css')
+	body#search
+		div#menu
+			a(href="/")
+				h1= brand
+			div
+				a(href="/search")= button1
+				a(href="/algorithm")= button2
+				a(href="/compilator")= button3
+				a(href="/admin")= button4
+		div#question
+				p#text
+				input(value="1", type="radio", name="answer")
+				label#one
+				br
+				input(value="2", type="radio", name="answer")
+				label#two
+				br
+				input(value="3", type="radio", name="answer")
+				label#three
+				br
+				input(value="4", type="radio", name="answer")
+				label#four
+				br
+				button#send= "Trimite"
+		script(src='lib/vue.min.js')
+		script(src='lib/vue-resource.min.js')
+		script(src='lib/socket.io.min.js')
+		script(src='js/quiz.js')

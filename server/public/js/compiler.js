@@ -3,6 +3,8 @@ function showCode(){
   Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
   var code = Blockly.JavaScript.workspaceToCode(workspace);
   code = code.replace(/^.*highlightBlock.*$/mg, "");
+  code = code.replace(/\n{2,}/g,"\n");
+  code = code.slice(1, code.length)
   editor.setValue(code, 1);
 }
 function runCode(){
@@ -38,6 +40,7 @@ document.getElementById("step").addEventListener("click", stepCode);
 var stepButton = document.getElementById('step');
 var myInterpreter = null;
 function initApi(interpreter, scope){
+  editor.setValue('', 1);
   interpreter.setProperty(scope, 'alert', interpreter.createNativeFunction(function(text){
     text = text ? text.toString() : '';
     var actualCode = editor.getValue();

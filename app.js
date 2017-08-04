@@ -13,6 +13,7 @@ global.partials = require('express-partials');
 global.cors = require('cors');
 global.request = require('request');
 global.helmet = require('helmet');
+global.md5 = require('md5');
 
 /* Database connect */
 mongo.connect(config.mongoUrl, function(err, db){
@@ -43,12 +44,17 @@ global.modelIndex = require('./server/models/index');
 global.modelSearch = require('./server/models/search');
 global.modelCompiler = require('./server/models/compiler');
 global.modelAdmin = require('./server/models/admin');
+global.modelAlgorithm = require('./server/models/algorithm');
+global.modelQuiz = require('./server/models/quiz');
+global.login = 0;
 
 /* Controllers */
 global.index = require('./server/controllers/index')(app);
 global.search = require('./server/controllers/search')(app);
 global.compiler = require('./server/controllers/compiler')(app);
 global.admin = require('./server/controllers/admin')(app);
+global.algorithm = require('./server/controllers/algorithm')(app);
+global.quiz = require('./server/controllers/quiz')(app);
 
 /* Listen */
 global.server = app.listen(config.port, function(){
@@ -67,5 +73,6 @@ io.on('connection', function(client){
     global.socketSearch = require('./server/sockets/search')(client);
     global.socketCompiler = require('./server/sockets/compiler')(client);
     global.socketAdmin = require('./server/sockets/admin')(client);
+    global.socketQuiz = require('./server/sockets/quiz')(client);
 
 });

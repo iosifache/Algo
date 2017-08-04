@@ -31,4 +31,18 @@ module.exports = function(client){
             if (err) console.log(err)
         });
     });
+    client.on('login', function(data){
+      var user = md5(data.user);
+      var password = md5(data.password);
+      db.collection('admin').find({}).toArray(function(err, results){
+          if (err) console.log(err)
+          else{
+            if ((user == results[0].email)&&(password==results[0].password)){
+              io.emit('AUTH');
+              login = 1;
+            }
+            else io.emit('nonAUTH')
+          };
+      });
+    });
 };

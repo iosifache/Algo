@@ -70,6 +70,7 @@ div#menu h1{
   text-transform: uppercase;
   float: left;
   cursor: pointer;
+  font-family: 'Permanent Marker', cursive;
 }
 div#menu div{
   float: right;
@@ -222,4 +223,104 @@ div#menu div a:hover{
   outline: 0;
   border: none;
   color: #fff;
+}
+#login{
+  text-align: center;
+  width: 50%;
+  margin: 20px 25% 0 25%;
+}
+#login input{
+  width: 350px;
+  background: #16a085;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 3px 0;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+#login button{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 36px;
+  width: 350px;
+  border: none;
+  outline: none;
+  background: #1abc9c;
+  border-radius: 5px;
+  margin: 5px;
+  transition: all 0.7s ease;
+}
+#login button:hover{
+  color: #000;
+}
+#algorithm .canvas{
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+#algorithm .canvas .box{
+  width: 150px;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+}
+#algorithm .canvas .item{
+  position: absolute;
+  width: 70px;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+}
+#algorithm  .canvas .apples{
+  animation: interschimbareApples 10s;
+  animation-fill-mode:forwards;
+  top: 30px;
+  left: 40px;
+}
+#algorithm  .canvas .bananas{
+  animation: interschimbareBananas 10s;
+  animation-fill-mode:forwards;
+  top: 30px;
+  left: 220px;
+}
+@keyframes interschimbareApples{
+    0%   {
+      top: 30px;
+      left: 40px;
+    }
+    33%  {
+      top: 30px;
+      left: 380px;
+    }
+    66%  {
+      top: 30px;
+      left: 380px;
+    }
+    100% {
+      top: 30px;
+      left: 220px;
+    }
+}
+@keyframes interschimbareBananas{
+    0%   {
+      top: 30px;
+      left: 220px;
+    }
+    33%  {
+      top: 30px;
+      left: 220px;
+    }
+    66%  {
+      top: 30px;
+      left: 40px;
+    }
+    100% {
+      top: 30px;
+      left: 40px;
+    }
 }
